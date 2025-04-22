@@ -1,0 +1,64 @@
+{
+  "name": "@dbsxortime/mcp-weather-server",
+  "version": "1.0.13",
+  "description": "한국 기상청 API를 사용하여 날씨 정보를 제공하는 MCP 서버입니다.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "mcp-weather-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && echo '#!/usr/bin/env node' > dist/index.js.tmp && cat dist/index.js >> dist/index.js.tmp && mv dist/index.js.tmp dist/index.js && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "weather",
+    "korea",
+    "mcp",
+    "api",
+    "kma",
+    "기상청",
+    "날씨"
+  ],
+  "author": "park-yuntaek",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "axios": "^1.6.7",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "5.5.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/park-yuntaek/mcp-weather-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/park-yuntaek/mcp-weather-server/issues"
+  },
+  "homepage": "https://github.com/park-yuntaek/mcp-weather-server#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ]
+}
