@@ -1,6 +1,6 @@
 {
   "name": "@dbsxortime/mcp-weather-server",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "한국 기상청 API를 사용하여 날씨 정보를 제공하는 MCP 서버입니다.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
