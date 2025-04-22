@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "mcp-weather-server": "./dist/index.js"
+    "mcpweather": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc && echo '#!/usr/bin/env node' > dist/index.js.tmp && cat dist/index.js >> dist/index.js.tmp && mv dist/index.js.tmp dist/index.js && chmod +x dist/index.js",
