@@ -1,6 +1,14 @@
 # MCP Weather Server
 
-날씨 정보를 제공하는 MCP 서버입니다.
+날씨 정보를 제공하는 MCP 서버입니다. 이 서버는 OpenWeatherMap API를 활용하여 전 세계의 실시간 날씨 정보와 일기예보를 제공합니다.
+
+## 주요 기능
+
+- 🌡️ 현재 날씨 정보 제공 (온도, 습도, 풍속 등)
+- 📅 5일간의 일기예보 제공
+- 📍 위치 기반 날씨 검색
+- 🔍 도시 이름으로 날씨 검색
+- ⚡ 빠른 응답 속도와 안정적인 서비스
 
 ## 설치 방법
 
@@ -35,24 +43,11 @@ cd mcp-weather-server
 npm install
 ```
 
-3. 환경 변수를 설정합니다:
-
-```bash
-cp .env.example .env
-# .env 파일을 편집하여 WEATHER_API_KEY를 설정합니다
-```
-
-4. 서버를 실행합니다:
+3. 서버를 실행합니다:
 
 ```bash
 npm start
 ```
-
-## 기능
-
-- 현재 날씨 정보 제공
-- 5일간의 일기예보 제공
-- 위치 기반 날씨 검색
 
 ## API 문서
 
@@ -71,3 +66,7 @@ GET /weather/forecast?lat={latitude}&lon={longitude}
 ## 라이센스
 
 MIT
+
+## 문의
+
+문제가 있거나 문의사항이 있으시면 [이슈](https://github.com/dbsxortime/mcp-weather-server/issues)를 생성해주세요.
